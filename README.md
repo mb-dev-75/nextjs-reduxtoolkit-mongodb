@@ -30,6 +30,9 @@ $ yarn (or npm install)
 # Configure your database environment variable (in next.config.js)
 $ MONGODB_URI: 'mongodb://localhost:27017/xxxx'
 
+# Change the baseUri variable if needed, in particular the port (in redux/features/taskSlice.js and tasksSlice.js)
+$ const baseUri = "http://localhost:3000";
+
 # Run the app
 $ yarn dev (or npm run dev) 
 ```
