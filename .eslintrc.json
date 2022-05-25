@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "es6": true
+  },
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "indent": ["error", 4]
+  }
 }
