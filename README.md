@@ -25,12 +25,13 @@ $ git clone https://github.com/mb-dev-75/nextjs-reduxtoolkit-mongodb.git
 $ cd nextjs-reduxtoolkit-mongodb
 
 # Install dependencies
-$ yarn (or npm install)
+$ yarn (or npm) install
 
 # Configure your database environment variable (in next.config.js)
 $ MONGODB_URI: 'mongodb://localhost:27017/xxxx'
 
-# Change the baseUri variable if needed, in particular the port (in redux/features/taskSlice.js and tasksSlice.js)
+# Change the baseUri variable if needed, in particular the port 
+# (in redux/features/taskSlice.js and tasksSlice.js)
 $ const baseUri = "http://localhost:3000";
 
 # Run the app
