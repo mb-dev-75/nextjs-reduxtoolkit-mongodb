@@ -18,9 +18,9 @@ export default function Task({ task }) {
 
     return (
         <div style={styles.task}>
-            {task.title}
+            <Link href={`/task/${task._id}`}>{task.title}</Link>
             <div>
-                <Link href={`/task/${task._id}`} passHref>
+                <Link href={`/update/${task._id}`} passHref>
                     <button>Update</button>
                 </Link>
                 <button onClick={() => handleDelete(task._id)}>Delete</button>
