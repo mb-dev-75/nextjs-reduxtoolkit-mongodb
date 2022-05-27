@@ -48,7 +48,7 @@ This app uses the following open source packages:
 - [redux-toolkit](https://redux-toolkit.js.org/)
 - [axios](https://axios-http.com/docs/intro)
 - [mongoose](https://mongoosejs.com/)
-- [next-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)
+- [next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)
 - [react-redux](https://react-redux.js.org/)
 - [next-connect](https://github.com/hoangvvo/next-connect)
 
