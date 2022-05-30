@@ -18,7 +18,11 @@ export default function Task({ task }) {
 
     return (
         <div style={styles.task}>
-            <Link href={`/task/${task._id}`}>{task.title}</Link>
+            <Link href={`/task/${task._id}`}>
+                <a>
+                    {task.title}
+                </a>
+            </Link>
             <div>
                 <Link href={`/update/${task._id}`} passHref>
                     <button>Update</button>
