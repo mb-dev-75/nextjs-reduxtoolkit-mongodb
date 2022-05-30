@@ -64,19 +64,9 @@ export const updateTask = async (req, res) => {
     try {
         const taskId = req.query.id;
         const newTask = req.body;
-        const oldTask = await Task.findOne({
-            title: req.body.title,
-            _id: req.body._id
-        });
-
-        if (oldTask) {
-            return res.status(422).json({
-                success: false,
-                error,
-            });
-        }
 
         await Task.findOneAndUpdate({ _id: taskId }, newTask);
+        
         res.status(200).json({ 
             success: true,
             task: newTask, 
